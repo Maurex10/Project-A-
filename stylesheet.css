@@ -7,13 +7,12 @@ body {
 }
 
 .background-one {
-    background-image: url(./images/worldmap-onepiece-by-sharpsider-1200px-8bits.png);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: flex-start;
-    background-attachment: fixed;
     height: 65em;
+    z-index: 1;
 }
 
 a {
@@ -28,7 +27,7 @@ a {
     background-color: black;
     opacity: 0.9;
     padding: 15px 200px;
-
+    z-index: 1000;
 }
 
 .logo {
@@ -46,22 +45,85 @@ a {
     color: white;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 25px;
+    z-index: 500;
 }
 
 .front-text {
     max-height: 440px;
 }
+
+h1 {
+    color: white;
+    font-family: 'Gideon Roman';
+    text-shadow: 0 0 3px #Ffffff, 0 0 7px #4578D5;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Saira Condensed';
+    text-shadow: 0 0 1px #Ffffff
+}
+
 .strawhatspirates {
     padding-left: 15px;
     max-height: 440px;
 }
 
-.background-two {
-    background-color: rgba(216, 0, 0, 1);
+video {
+    position: fixed;
+    width: 100%;
 }
 
-.content-two {
-    margin: 0px 200px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+.background-two {
+    
 }
+.content-two {
+    background-color: rgba(11, 24, 46, 1);
+    position: relative;
+    z-index: 1000;
+    flex-direction: column;
+    display: flex;
+    margin-top: -65px;
+    padding: 30px 220px;
+    box-shadow: inset 0 0 50px 30px rgba(0, 0, 0, 0.8)
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Gideon Roman';
+    font-size: xx-large;
+    color: white;
+    text-shadow: 0 0 3px #Ffffff, 0 0 7px #4578D5;
+}
+
+.list-items {
+    display: flex;
+}
+
+.list-items ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    padding-inline-start: 0px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-shadow: 0 0 3px #Ffffff, 0 0 7px #4578D5;
+}
+
+.content-two img {
+    width: 260px;
+    border: 5px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 5px black;
+}
+
